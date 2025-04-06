@@ -9,13 +9,33 @@
     * {
       border: thin red solid;
     }
+
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .profile-picture {
+      width: 128px;
+      height: 128px
+      object-fit: cover;
+      border-radius: 128px
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
   </style>
   </head>
 
   <body>
     <div class="main-container">
       <div class="profile picture">
-        <img src="/thumbnails/jemzy.jpg" alt="Author's headshot">
+        <img class="profile-picture" src="/thumbnails/jemzy.jpg" alt="Author's headshot">
       </div>
       
       <div class="name">
@@ -30,7 +50,7 @@
       
       <div class="links row">
         <div class="item">
-          <img src="/thumbnails/g-wags.jpg" alt="Mercedes-Benz G-Wagon">
+          <img src="/thumbnails/g-wags.jpg" class ="thumbnail" alt="Mercedes-Benz G-Wagon">
           
           <a href="https://www.gq.com/story/history-of-mercedes-g-wagon-gelandewagen" target="_blank">
             The History of the Mercedes-Benz G-Wagon
@@ -38,7 +58,7 @@
         </div>
         
         <div class="item">
-          <img src="thumbnails/Gimlet_Media_Logo.jpeg" alt="Gimlet Media Logo">
+          <img src="thumbnails/Gimlet_Media_Logo.jpeg" class="thumbnail" alt="Gimlet Media Logo">
 
           <a href="https://www.youtube.com/watch?v=4j5cpuVyiJE&ab_channel=StartUpPodcast" target=""_blank">
             How Not to Pitch a Billionaire
@@ -46,7 +66,7 @@
         </div>
         
         <div class="item">
-          <img src="thumbnails/All-On.jpg" alt="All-On logo">
+          <img src="thumbnails/All-On.jpg" class="thumbnail" alt="All-On logo">
 
           <a href="https://www.all-on.com/impact-stories-from-inside-all-on.html" target="_blank">
             Impact Investing: Powering Local Economies
