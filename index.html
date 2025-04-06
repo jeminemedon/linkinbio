@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charteset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Jemzy's links</title>
 
@@ -10,9 +12,23 @@
       border: thin red solid;
     }
 
+    html {
+      min-height: 100%;
+    }
+
     body {
+      min-height: 100%;
       padding-top: 40px;
       padding-bottom: 40px;
+      background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+      color: #f5f5f5;
+      font-family: 'poppins', sans-serif;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600px;
     }
 
     .profile-picture {
@@ -29,13 +45,47 @@
       object-fit: cover;
     }
 
+    .item {
+      background-color: #2e2e2e;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+    }
+
+    .main-container {
+      max-width: 640px;
+      margin: auto
+    }
+
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .name {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .social-icons {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+
   </style>
   </head>
 
   <body>
     <div class="main-container">
-      <div class="profile picture">
-        <img class="profile-picture" src="/thumbnails/jemzy.jpg" alt="Author's headshot">
+      <div class="image-row">
+        <img class="profile-picture" src="/thumbnails/profile-pic.PNG" alt="Author's headshot">
       </div>
       
       <div class="name">
@@ -48,11 +98,11 @@
         <a href="https://www.facebook.com/jeminemedon/" target="_blank">Facebook</a>
       </div>
       
-      <div class="links row">
+      <div class="links-row">
         <div class="item">
           <img src="/thumbnails/g-wags.jpg" class ="thumbnail" alt="Mercedes-Benz G-Wagon">
           
-          <a href="https://www.gq.com/story/history-of-mercedes-g-wagon-gelandewagen" target="_blank">
+          <a class="link-text" href="https://www.gq.com/story/history-of-mercedes-g-wagon-gelandewagen" target="_blank">
             The History of the Mercedes-Benz G-Wagon
           </a>
         </div>
@@ -60,7 +110,7 @@
         <div class="item">
           <img src="thumbnails/Gimlet_Media_Logo.jpeg" class="thumbnail" alt="Gimlet Media Logo">
 
-          <a href="https://www.youtube.com/watch?v=4j5cpuVyiJE&ab_channel=StartUpPodcast" target=""_blank">
+          <a class="link-text" href="https://www.youtube.com/watch?v=4j5cpuVyiJE&ab_channel=StartUpPodcast" target=""_blank">
             How Not to Pitch a Billionaire
           </a>
         </div>
@@ -68,7 +118,7 @@
         <div class="item">
           <img src="thumbnails/All-On.jpg" class="thumbnail" alt="All-On logo">
 
-          <a href="https://www.all-on.com/impact-stories-from-inside-all-on.html" target="_blank">
+          <a class="link-text" href="https://www.all-on.com/impact-stories-from-inside-all-on.html" target="_blank">
             Impact Investing: Powering Local Economies
           </a>
         </div>
